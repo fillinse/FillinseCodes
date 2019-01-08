@@ -1,0 +1,15 @@
+//
+//  CodesPch.pch
+//  FillinseCodes
+//
+//  Created by Fillinse on 16/11/3.
+//  Copyright © 2016年 Fillinse. All rights reserved.
+//
+
+#ifndef CodesPch_pch
+#define CodesPch_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* CodesPch_pch */
