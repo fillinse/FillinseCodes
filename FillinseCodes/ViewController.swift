@@ -21,7 +21,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-      self.title = "知识点代码合集";
+      self.title = "知识点代码合集新";
         
         //内容
        self.dataSourceArray = ["Animations","CircleFlowBanner"]
