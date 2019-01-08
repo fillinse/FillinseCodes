@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+import Foundation
+import UserNotificationsUI
+import UserNotifications
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if #available(iOS 10.0, *){
+            let center = UNUserNotificationCenter.current()
+            let type : UNAuthorizationOptions = [.badge];
+            center.requestAuthorization(options: type, completionHandler: { (granted :Bool, error: Error?) in
+                
+            })
+        }
+        
         return true
     }
 
